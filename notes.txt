@@ -1,0 +1,6 @@
+youtube url - https://www.youtube.com/watch?v=J0sT7d0r6T4&list=PLympUr-oxAWU43N4ZaVG1PSCHkV0kcyaK&index=8
+aspect-square
+object-cover
+relative
+
+mdx rendering timestamps - 33:04 - 1:03:41
