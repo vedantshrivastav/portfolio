@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import { Container } from "./container";
 import Image from "next/image";
 import { useState } from "react";
@@ -20,7 +20,7 @@ export const Navbar = () => {
   const { scrollY } = useScroll();
   const [scrolled, setScrolled] = useState<boolean>(false);
   const y = useTransform(scrollY, [0, 100], [0, 10]);
-  const width = useTransform(scrollY, [0, 100], ["60%", "40%"]);
+  const width = useTransform(scrollY, [0, 100], ["58%", "50%"]);
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (latest > 20) {
       setScrolled(true);

@@ -2,5 +2,10 @@ youtube url - https://www.youtube.com/watch?v=J0sT7d0r6T4&list=PLympUr-oxAWU43N4
 aspect-square
 object-cover
 relative
+min-screen
+key in map
 
-mdx rendering timestamps - 33:04 - 1:03:41
+TODO
+mdx rendering timestamps - 33:04 - 1:03:41 , 1:20:30 - 1:24:25
+Fix the toast in contact form (it is not showing the icons)
+Fix the space between footer and testimonials 

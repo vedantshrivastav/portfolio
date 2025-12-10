@@ -2,44 +2,13 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import Link from "next/link";
-export const Projects = () => {
-  const projects = [
-    {
-      title: "Macbook Mockup",
-      src: "https://aceternity.com/cdn-cgi/image/width=2048/https://assets.aceternity.com/macbook-scroll.png",
-      href: "#",
-      description:
-        "A smooth MacBook mockup showcasing interactive scrolling animations.",
-    },
-    {
-      title: "Macbook Mockup",
-      src: "https://aceternity.com/cdn-cgi/image/width=2048/https://assets.aceternity.com/macbook-scroll.png",
-      href: "#",
-      description:
-        "A clean and minimal device preview designed to display UI layouts elegantly.",
-    },
-    {
-      title: "Instant Feedback",
-      src: "https://aceternity.com/cdn-cgi/image/width=1080/https://assets.aceternity.com/apple-cards-carousel.png",
-      href: "#",
-      description:
-        "A responsive card carousel that provides instant UI feedback with smooth transitions.",
-    },
-    {
-      title: "Flight Simulator",
-      src: "https://aceternity.com/cdn-cgi/image/width=2048/https://assets.aceternity.com/background-lines.webp",
-      href: "#",
-      description:
-        "A dynamic visual experience with animated background lines resembling a flight simulator.",
-    },
-  ];
-
+import { Project } from "@/constants/projects";
+import { SectionHeading } from "./section-heading";
+export const Projects = ({ projects }: { projects: Project[] }) => {
   return (
     <div className="py-10">
-      <p>
-        I love building web apps and products that can impact millions of lives
-      </p>
-      <div className="grid grid-cols-1 gap-4 py-4 md:grid-cols-2">
+      <SectionHeading>A lifetime of projects</SectionHeading>
+      <div className="grid grid-cols-1 gap-4 py-4 md:grid-cols-3">
         {projects.map((project, idx) => (
           <motion.div
             initial={{

@@ -1,32 +1,25 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Container } from "../components/container";
-import { Projects } from "../components/projects";
 import { Collage } from "../components/collage";
 import { Timeline } from "../components/timeline";
+import { Projects } from "../components/projects";
 import { Heading } from "../components/heading";
 import { SubHeading } from "../components/subheading";
+import { projects } from "@/constants/projects";
 
-export default function About() {
+export default function ProjectsPage() {
   return (
     <div className="flex min-h-screen items-start justify-start">
       <Container className="min-h-[200vh] px-10 md:pt-20 md:pb-10">
-        <Heading>About Me</Heading>
+        <Heading>Projects</Heading>
         <SubHeading>
           I am a passionate software engineer dedicated to crafting elegant
           solutions for complex problems. With expertise in full-stack
           development, I enjoy building user-centric applications that make a
           difference.
         </SubHeading>
-        <p className="text-secondary max-w-lg pt-4 text-sm md:text-sm">
-          I love to travel and explore new places.I am a big fan of nature and
-          adventure. I am a also a big fan of technology and innovation
-        </p>
-        <Collage />
-        <p className="text-secondary max-w-lg pt-4 text-sm md:text-sm">
-          Here is a timeline of my life achievements.
-        </p>
-        <Timeline />
+        <Projects projects={projects} />
       </Container>
     </div>
   );
